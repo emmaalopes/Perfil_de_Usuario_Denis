@@ -1,34 +1,30 @@
-# 🔐 Sistema de Autenticação e Personalização em PHP
+# 🚀 Desafio: Sistema de Autenticação e Perfil em PHP
 
-Uma aplicação simples em PHP que exemplifica o gerenciamento de sessões (`$_SESSION`), autenticação de utilizadores e personalização de interface em tempo real.
-
----
-
-## 📌 Funcionalidades
-
-- **Autenticação de Utilizador**: Tela de login com verificação de credenciais e mensagens de erro.
-- **Gerenciamento de Sessão**: Mantém a sessão ativa após o login e guarda as preferências do utilizador.
-- **Personalização de Interface**: Permite escolher e aplicar a cor de fundo da página de perfil através de um seletor de cores (`<input type="color">`).
-- **Encerramento de Sessão (Logout)**: Botão de saída que destrói a sessão em execução e redireciona para a tela inicial.
+Este projeto é um sistema simples e funcional de autenticação de utilizadores e personalização de perfil desenvolvido em PHP. O objetivo principal é praticar a gestão de sessões, autenticação básica e persistência temporária de preferências do utilizador.
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Funcionalidades
 
-- **PHP**: Processamento de formulários (`POST`/`GET`), sessões e renderização dinâmica.
-- **HTML5**: Estruturação visual da página e elementos de entrada de dados.
+- 🔑 **Autenticação de Utilizador:** Ecrã de login para validação das credenciais de acesso.
+- 🛡️ **Controlo de Acesso com Sessões PHP:** Acesso restrito à página de perfil, visível apenas após autenticação.
+- 👤 **Página de Perfil Personalizada:** Exibição da mensagem de boas-vindas com o nome do utilizador autenticado.
+- 🎨 **Personalização da Cor de Fundo:** Opção para o utilizador escolher e guardar a cor de fundo desejada na sessão.
+- 🚪 **Logout:** Encerramento da sessão com redirecionamento automático para o ecrã de login.
 
 ---
 
-## 🚀 Como Executar o Projeto
+## 🔑 Credenciais de Acesso
 
-### Pré-requisitos
-- Ter o **PHP 7.4+** instalado no sistema.
-- Servidor web local (como **XAMPP**, **WAMP**, **MAMP**) ou a CLI do PHP.
+Para realizar o login no sistema, utiliza os seguintes dados de teste:
 
-### Passo a Passo
+- **Utilizador:** `admin`
+- **Password:** `123456`
 
-1. **Clonar o Repositório**:
-   ```bash
-   git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
-   cd seu-repositorio
+---
+
+## 📁 Estrutura de Ficheiros
+
+```text
+.
+└── index.php    # Contém a lógica de autenticação, sessão, perfil e personalização de cor.
